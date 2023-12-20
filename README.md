@@ -1,3 +1,14 @@
+# React Redux Login with Username Page
+
+This project demonstrates a simple login functionality implemented using React, Redux, and username pages. It includes a basic setup for handling user authentication and navigation between login and username pages.
+
+## Features
+
+- **Redux State Management:** Utilizes Redux for managing the application state.
+- **Username Page:** Displays a welcome message with the username after successful login.
+- **Logout Functionality:** Provides a logout button to clear the login status.
+- **Custom Hook:** created a custom hook useFetch to fetch the datas from the API passed through the UserName component.
+
 # Getting Started with Create React App
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
