@@ -9,12 +9,16 @@ const Logout = () => {
     dispatch(logout());
   };
   return (
-    <div className="logout">
-      <h1>
-        Welcome <span className="user_name">{user.name}</span>
+    <div className="flex">
+      <h1 className="p-10">
+        Welcome{" "}
+        <span className="user_name text-amber-400 text-xl">{user.name}</span>
       </h1>
       {""}
-      <button className="logout_button" onClick={(e) => handleLogout(e)}>
+      <button
+        className="bg-black mt-5 p-2 mb-5 rounded-md text-white"
+        onClick={(e) => handleLogout(e)}
+      >
         Logout
       </button>
     </div>

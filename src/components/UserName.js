@@ -1,6 +1,6 @@
 import React, { useState } from "react";
 import { url } from "../utlities/constants";
-import useFetch from "./useFetch";
+import useFetch from "../utlities/useFetch";
 import Logout from "./Logout";
 
 const UserName = () => {
@@ -14,18 +14,21 @@ const UserName = () => {
 
   return (
     <div className="container mx-auto p-4">
-      <div className="mb-4">
-        <input
-          type="text"
-          placeholder="Search by name"
-          value={searchText}
-          onChange={(e) => setSearchText(e.target.value)}
-          className="border p-2"
-        />
+      <div className="flex justify-between">
+        <div className="mb-4 p-6">
+          <input
+            type="text"
+            placeholder="Search by name"
+            value={searchText}
+            onChange={(e) => setSearchText(e.target.value)}
+            className="border p-2"
+          />
+        </div>
+        <div>
+          <Logout />
+        </div>
       </div>
-      <div>
-        <Logout />
-      </div>
+
       {loading ? (
         <h1>Loading...</h1>
       ) : (
